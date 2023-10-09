@@ -1,0 +1,151 @@
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: #00b579;
+  height: 4rem;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  color:#222222;
+}
+
+#logo {
+  display: flex;
+  margin-left: 2rem;
+  height: 4rem;
+  align-items: center;
+}
+
+#logo-h1 {
+  font-family: "poppins", "sans-serif" !important;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+
+#logo img {
+  height: 80%;
+}
+
+#nav-items {
+  height: 4em;
+  min-width: 30%;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-items img {
+  height: 80%;
+}
+
+#search {
+  width: 20em;
+}
+
+#search input {
+  width: 90%;
+  border: none;
+  margin: 0.75rem auto 0.5rem auto;
+  border-radius: 20px;
+  background-color: white;
+  /*color: rgba(0,0,0,0.7);*/
+  padding: 0.75rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#search input:focus-visible {
+  outline: none;
+}
+
+#hamburger {
+  margin: auto 2rem auto 0;
+}
+
+#hamburger:hover{
+  cursor:pointer;
+}
+
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+#subnav {
+  /*display: none;*/
+  position: absolute;
+  right: -20%;
+  top:4em;
+  height: 100vh;
+  width: 20%;
+  background-color: #00b579;
+  transition-duration: 0.2s;
+  z-index: -10;
+}
+
+#subnav.active{
+  display: block;
+  right: 0em;
+  z-index:10;
+}
+
+#subnav ul {
+  list-style: none;
+}
+
+#subnav ul li a{
+  display:block;
+  padding: 0.5em 1em ;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+#subnav ul li a:hover {
+  background-color: #00473E;
+  /*color: #FAAE2B;*/
+}
+
+.material-symbols-outlined.nav_profile {
+  font-size: 3em;
+}
+
+/* media queries */
+@media screen and (max-width: 50em) {
+  aside {
+    display: none;
+  }
+
+
+
+  #subnav {
+    width: 100%;
+    right:-100%;
+  }
+
+  #subnav ul {
+    margin: 10vh 0;
+  }
+  #subnav li a {
+    text-align: center;
+  }
+
+  #subnav ul li a {
+    font-size: 2.2em;
+    padding: 2em;
+  }
+
+}

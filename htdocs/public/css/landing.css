@@ -1,0 +1,169 @@
+/* * {
+    margin: 0;
+    padding: 0;
+}
+.bgs {
+    
+}
+.bg {
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 0%, 50% 100%, 0% 100%);
+
+    overflow: hidden;
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+
+}
+
+.bg video {
+    width: 400px;
+    height: 225px;
+}
+
+#bg1 {
+    left: 0;
+    
+}
+
+#bg2{
+    left: 0;
+    right: 0;
+    margin: auto auto;
+
+}
+
+#bg3{
+    right:0;
+} */
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color:#222222;
+
+}
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100%;
+  height: 100vh;
+  background-color: rgba(15,15,15,0.05);
+}
+/* signup box */
+#signup-box {
+  display: flex;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+}
+.card {
+  margin: auto 0 auto 10em;
+  height: 40em;
+  max-width: 30em;
+  padding: 2em;
+  border: 1px solid rgba(0,181,121,0.7);
+  border-top: 5px solid #7fdfdf;
+  box-shadow: 1px 1px 3px rgba(15,15,15,0.5);
+
+  background-color: #fff;
+
+}
+#slogan {
+  font-size: 3em;
+
+  background-image: linear-gradient(90deg, rgba(0,181,121,0.7) 0%, rgba(155,216,22,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.gradient-divider {
+  margin: 1em auto 5em 1em;
+  display: block;
+  background: linear-gradient(90deg, rgba(0,181,121,0.52) 0%, rgba(155,216,22,1) 100%);
+  height:1em;
+  width:90%;
+
+}
+
+/*gif box stuff */
+
+.gif-box {
+  width: 50%;
+  /*display: flex;*/
+}
+
+.gif-box img, .gif-box video {
+  position: absolute;
+  height: 100%;
+}
+
+.mask-1 {
+  position: absolute;
+  top:4em;
+  right:35%;
+  width: 40em;
+  height: 94vh;
+  clip-path: polygon(30% 0, 100% 0%,20% 100%, 0 100%,0 30%);
+  z-index: -10;
+}
+
+.mask-2 {
+  position: absolute;
+  top:0em;
+  right: -6.5em;
+  width: 80em;
+  height: 100vh;
+  clip-path: polygon(43% 0%, 100% -30%, 50% 100%, 0 100%);
+  z-index: -9;
+}
+
+.mask-3 {
+  position: absolute;
+  top:0;
+  right:0;
+  width: 33em;
+  height: 100%;
+  clip-path: polygon(0 100%, 100% 100%, 100% 0, 92.5% 0 );
+  z-index: -8;
+}
+
+button {
+  margin-top: 10em;
+  padding: 1em;
+  font-size: 1.25em;
+  border: 3px solid rgba(0,181,121,0.7);
+  background-color: rgba(0,181,121,0.25);
+  color: rgba(0,181,121,1);
+}
+
+button:hover {
+  cursor: pointer;
+
+}
+
+/* Media query */
+@media screen and (max-width: 50em) {
+  main {
+    display: block;
+
+  }
+  #signup {
+    width: 100%;
+  }
+
+  .card {
+    margin: auto;
+  }
+}
